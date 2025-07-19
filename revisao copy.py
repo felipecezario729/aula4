@@ -7,4 +7,3 @@ elif(n % 2 == 1):
     print(f'o {n} digitado e Impar')
 else:
     print('o numero digitado é invalido')
-
