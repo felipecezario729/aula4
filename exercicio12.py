@@ -20,14 +20,19 @@ valor_hora = float(input('digite o valor da hora trabalhada'))
 qt_hora = float(input('digite a quantidade de horas trabalhada'))
 salario_bruto = valor_hora*qt_hora
 
-print(f'salario bruto{valor_hora}*{qt_hora}   R$(salario_bruto)')
+print(f'salario bruto{valor_hora}*{qt_hora}   R${salario_bruto}')
 
-if salario_bruto <=900
+if salario_bruto <=900: 
    ir = 0 
+   irtexto = 'isento'
    print(f'salario ate 900 (inclusive) isento')
 elif salario_bruto >900 and salario_bruto <=1500:
     ir = salario_bruto * 0.05
+    irtexto = 5
 elif salario_bruto >1500 and salario_bruto <= 2500:
-    ir = salario_bruto 10/100
+    ir = salario_bruto * 10/100
+    irtexto = 10
 else:
-    ir = salario_bruto *    
+    irtexto = 20
+    ir = salario_bruto * 20/100
+    print(f'(-)ir ({irtexto})')    
